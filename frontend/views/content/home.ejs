@@ -1,0 +1,32 @@
+<div class="">
+    <section class="text-center py-5">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h1 class="fw-light">Image Upscale</h1>
+                <form method="post" action="" enctype="multipart/form-data" id="myform">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Upload Image File</label>
+                        <input class="form-control" name="file" type="file" id="file">
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-warning" id="but_upload">
+                            <span class="btn-sppiner spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                                style="display: none;"></span>
+                            <span class="btn-text">UpScale</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="row gy-3 justify-content-start gallery mt-3 mb-3">
+        <div class="col-6 m-0 p-1 text-end">
+            
+            <img id="img-preview" class="img-fluid object-fit-cover" style="height: 500px;" />
+        </div>
+        <div class="col-6 m-0 p-1 text-start">
+            <img id="img-processed" class="img-fluid object-fit-cover" style="height: 500px;" />
+        </div>
+    </section>
+</div>
