@@ -9,9 +9,11 @@ logs
 
 
 __pycache__/
-/beckend/app/__pycache__/
-/beckend/tests/__pycache__/
+/backend/app/__pycache__/
+/backend/tests/__pycache__/
 .pytest_cache
+
+/backend/app/weights/*.pth
 
 .DS_Store
 node_modules/
