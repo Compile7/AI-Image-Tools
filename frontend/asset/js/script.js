@@ -36,7 +36,9 @@ $(document).ready(function () {
                         alert('file not uploaded');
                     }
                     var totalTime = new Date().getTime()-ajaxTime;
-                    console.log(totalTime)
+                    var seconds = totalTime / 1000;
+                    seconds = seconds.toFixed(3);
+                    console.log({seconds})
                 },
             });
         } else {
