@@ -13,7 +13,7 @@ __pycache__/
 /backend/tests/__pycache__/
 .pytest_cache
 
-/backend/app/weights/*.pth
+#/backend/app/weights/*.pth
 
 .DS_Store
 node_modules/
