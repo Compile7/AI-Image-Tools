@@ -30,7 +30,7 @@ model4.load_weights('weights/RealESRGAN_x4.pth', download=True)
 model8 = RealESRGAN(device, scale=8)
 model8.load_weights('weights/RealESRGAN_x8.pth', download=True)
 
-@app.post("/upscale")
+@app.post("/image/upscale")
 async def root(file: UploadFile = File()):
     image = Image.open(file.file).convert('RGB')
     sr_image = model4.predict(image)

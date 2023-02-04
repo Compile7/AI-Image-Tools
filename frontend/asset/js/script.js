@@ -16,14 +16,13 @@ $(document).ready(function () {
             if (file) {
                 let reader = new FileReader();
                 reader.onload = function (event) {
-                    console.log(event.target.result);
                     $('#img-preview').attr('src', event.target.result);
                 }
                 reader.readAsDataURL(file);
             }
 
             $.ajax({
-                url: 'http://localhost:8000/upscale',
+                url: 'http://localhost:8000/image/upscale',
                 type: 'post',
                 data: fd,
                 contentType: false,
