@@ -6,7 +6,7 @@
                 <form method="post" action="" enctype="multipart/form-data" id="myform">
                     <div class="mb-3">
                         <label for="file" class="form-label">Upload Image File</label>
-                        <input class="form-control" name="file" type="file" id="file">
+                        <input class="form-control" accept="image/*" name="file" type="file" id="file">
                     </div>
                     <div class="mb-3">
                         <button type="button" class="btn btn-warning" id="but_upload">
@@ -22,7 +22,7 @@
 
     <section id="gallery" class="row gy-3 justify-content-start gallery mt-3 mb-3">
         <div class="col-6 m-0 p-1 text-end">
-            
+
             <img id="img-preview" class="img-fluid object-fit-cover" style="height: 500px;" />
         </div>
         <div class="col-6 m-0 p-1 text-start">
