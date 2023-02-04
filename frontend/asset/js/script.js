@@ -20,7 +20,7 @@ $(document).ready(function () {
                 }
                 reader.readAsDataURL(file);
             }
-
+            var ajaxTime= new Date().getTime();
             $.ajax({
                 url: 'http://localhost:8000/image/upscale',
                 type: 'post',
@@ -35,6 +35,8 @@ $(document).ready(function () {
                     } else {
                         alert('file not uploaded');
                     }
+                    var totalTime = new Date().getTime()-ajaxTime;
+                    console.log(totalTime)
                 },
             });
         } else {
