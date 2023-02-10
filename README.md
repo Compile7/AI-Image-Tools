@@ -19,7 +19,7 @@ uvicorn main:app --port 8000 --reload
 ```
 cd backend/app
 docker build -t backend .
-docker run --rm -dit -p 8080:8080 backend:latest 
+docker run --rm -dit -p 8000:8000 backend:latest 
 
 For Single CPU -cpuset-cpus="<CPU CORE Number>"
 docker run --rm -dit --cpuset-cpus="3" -p 8000:8000 backend:latest 
