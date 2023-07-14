@@ -1,0 +1,10 @@
+numpy
+opencv-python-headless==4.5.3.56
+Pillow
+torch>=1.7
+torchvision>=0.8.0
+tqdm
+huggingface-hub
+fastapi
+python-multipart
+uvicorn[standard]
